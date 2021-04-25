@@ -1,0 +1,15 @@
+<a class="my-card {{#if loading}}loading{{/if}}" href="/action/{{url}}">
+    <div class="my-card-header">
+        {{#unless loading}}
+            {{#if picture}}
+                <img src="data:image/jpg;base64, {{picture}}" alt={{name}}/>
+            {{else}}
+                {{> no-image}}
+            {{/if}}
+        {{/unless}}
+    </div>
+    <div class="my-card-body">
+        <h2 class="title">{{name}}</h2>
+        <div class="subtitle"><p>{{description}}</p></div>
+    </div>
+</a>

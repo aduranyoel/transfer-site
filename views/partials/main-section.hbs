@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/main-section.css">
+<main>
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h3>{{t.how_its_works}}</h3>
+            </div>
+            <div class="row" id="cards">
+                {{#each courses as |course|}}
+                    <div class="col-xl-3 col-lg-4 col-md-6 d-flex align-items-stretch">
+                        {{> course-card parameter=course}}
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+
+    <div id="paginator"></div>
+</main>
+<script src="/js/main.bundle.js"></script>

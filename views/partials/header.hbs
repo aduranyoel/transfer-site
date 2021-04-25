@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/css/header.css">
+<header id="header">
+    <div class="container d-flex justify-content-between">
+        <div class="logo" {{#if subtitle}}style="width: 50%"{{/if}}>
+            <h1 class="text-light">
+                <a href="/"><span>{{title}}</span></a>
+            </h1>
+            {{#if subtitle}}
+                <hr/>
+                <h2>{{subtitle}}</h2>
+            {{/if}}
+        </div>
+        <nav class="nav-menu d-lg-block">
+            <ul>
+                <li class="">
+                    <a href="/">{{t.home}}</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

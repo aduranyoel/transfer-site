@@ -1,0 +1,35 @@
+<div class="accordion-item {{#if loading}}loading{{/if}}">
+    <h2 class="accordion-header" >
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse{{@index}}" aria-expanded="false"
+                aria-controls="collapse{{@index}}">
+            {{name}}
+        </button>
+    </h2>
+    <div id="collapse{{@index}}"
+         class="accordion-collapse collapse"
+         data-bs-parent="#accordionCourse"
+         data-sectionId="{{sectionId}}">
+        <div class="accordion-body">
+            <ul>
+                {{#each lessons as |l|}}
+                    <li>
+                        <div>
+                            {{#unless loading}}<img width="1rem" height="1rem" src="/img/play-circle-solid.svg" alt="play"/>{{/unless}}
+                            <span
+                                    data-accountId="{{l.accountId}}"
+                                    data-courseId="{{l.courseId}}"
+                                    data-sectionId="{{l.sectionId}}"
+                                    data-lessonId="{{l.lessonId}}"
+                                    data-link="{{l.link}}"
+                                    data-idx="{{l.idx}}"
+                                    data-nodeId="{{l.nodeId}}"
+                            >{{l.name}}</span>
+                        </div>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

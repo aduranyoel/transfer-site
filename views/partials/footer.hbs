@@ -1,0 +1,24 @@
+<style>
+    #footer .container .copyright {
+        text-align: left !important;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+    #footer .container .copyright .slogan {
+        display: flex;
+        flex-direction: column;
+        padding-left: 8px;
+    }
+</style>
+<footer id="footer">
+    <div class="container">
+        <div class="copyright">
+            <img width="50px" height="50px" src="/img/transfer.svg" alt="Transfer logo"/>
+            <div class="slogan">
+                <strong><span>{{title}}</span></strong>
+                {{t.footer_slogan}}
+            </div>
+        </div>
+    </div>
+</footer>

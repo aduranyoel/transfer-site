@@ -29,6 +29,17 @@
     .header .slogan p {
         margin: 0;
     }
+
+    .transfer-container {
+        position: absolute;
+        top: 1px;
+    }
+
+    .action-transfer {
+        margin-right: 30px;
+        background-color: #546078;
+        border-color: transparent;
+    }
 </style>
 <section class="header">
     <div class="container">
@@ -36,6 +47,12 @@
         <div class="slogan d-none d-md-block">
             <h1>{{t.logoTitle}}</h1>
             <p>{{t.logoSubtitle}}</p>
+        </div>
+        <div class="mt-2 col-12 transfer-container">
+            <a href="/transfer" class="btn btn-success btn-lg float-end action-transfer">
+                <img style="width: 30px; height: 30px" src="/img/transfer.svg" alt="Transfer logo"/>
+                {{t.transfer}}
+            </a>
         </div>
     </div>
 </section>

@@ -1,6 +1,6 @@
 const config = {
-    title: 'Company Name',
-    appName: 'Company Name',
+    title: 'Cuba Express',
+    appName: 'Cuba Express',
     siteUrl: 'https://www.megacourses.top/',
     siteDomain: 'www.megacourses.top'
 };

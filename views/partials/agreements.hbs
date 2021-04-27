@@ -1,0 +1,38 @@
+<div class="card">
+    <div class="card-header text-center text-uppercase">{{t.agree.terms}}</div>
+    <div class="card-body">
+        <ul>
+            <h4>{{t.agree.title}}</h4>
+            <h4>{{t.deal_title}}</h4>
+            <li>{{t.deal_body.uno}}</li>
+            <li>{{t.deal_body.dos}}</li>
+            <li>{{t.deal_body.tres}}</li>
+            <li>{{t.deal_body.cuatro}}</li>
+            <li>{{t.deal_body.cinco}}</li>
+            <li>{{t.deal_body.seis}}</li>
+            <li>{{t.deal_body.siete}}</li>
+            <li>{{t.deal_body.ocho}}</li>
+        </ul>
+        <ul>
+            <h4>{{t.deal.title}}</h4>
+            <li>{{t.deal.uno}}</li>
+            <li>{{t.deal.dos}}</li>
+            <li>{{t.deal.tres}}</li>
+        </ul>
+    </div>
+    <div class="card-footer">
+        <label for="agree">
+            <input id="agree"
+                   onchange="handleChange(this)"
+                   type="checkbox" class="form-control-color"/> {{t.agree.accept}}
+        </label><br/>
+        <a id="next" href="/" class="btn btn-secondary disabled mt-2 float-end">{{t.agree.btn_next}}</a>
+    </div>
+</div>
+<script>
+    function handleChange(e) {
+        const next = document.getElementById('next');
+        e.checked ?
+        next.classList.remove('disabled') : next.classList.add('disabled');
+    }
+</script>

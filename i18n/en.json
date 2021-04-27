@@ -1,6 +1,29 @@
 {
   "title": "Online courses - anytime, anywhere | Mega Courses",
   "subtitle": "No distance limits",
+  "agree": {
+    "title": "Take a minute and read carefully.",
+    "terms": "Agreement.",
+    "accept": "I agree with the terms and deals.",
+    "btn_next": "Next"
+  },
+  "deal_title": "The deal:",
+  "deal_body": {
+    "uno": "Our platform will take the 20% of total amount.(You send 100 and destiny gets 80.)",
+    "dos": "Min amount allowed to transfer is 20 USD.",
+    "tres": "Our platform warranty cash delivery or in deposit to an account according requested.\nWhether is deposited to an account, the process will be faster, in case of cash delivery, this service is only for residents in BANES municipality of HOLGUIN's province in the eastern of the country.",
+    "cuatro": "Deposits will always be to MLC or CUP Card accord is possible to get by the destiny. Cash deliveries shall be in CUP",
+    "cinco": "In case exchange is requested notice that: we give 40 cup foreach 1 usd (this might change)",
+    "seis": "In normal conditions the max time lapse for delivery is 48 hours, having aware the time zone difference. Mostly wont take more than 12 hours arrive to destiny. (Understand 'Normal Conditions' when not exist eventualities such as: Disasters , uncertainty with the internet in the destiny land that temporary unable download the information, or similar.)",
+    "siete": "The process is 100 % confidential, no body could never ask or request records about your operation.",
+    "ocho": "You will be notified at the time of destiny gets the money, if deposit then with the transaction ID, if cash then we will take a picture of ID Card and it will be sent back to you as proof, in that point the deal is donne and closed."
+  },
+   "deal": {
+    "title": "When you agree you declare that:",
+    "uno": "You have proceeded with free will to choice.",
+    "dos": "You understand how this platform works and you agree with each term.",
+    "tres": "You are responsible of introducing all the requested data rightly.\nIf you wrong, you are on your own."
+  },
   "transfer": "Transfer now",
   "description": "Free courses, be part of a community that learns and shares their knowledge",
   "home": "Home",

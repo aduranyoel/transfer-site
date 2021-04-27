@@ -30,4 +30,16 @@ router.get('/', async (req, res) => {
     }
 });
 
+router.get('/transfer', async (req, res) => {
+    try {
+        res.render("transfer", {
+            ...req.extra,
+            section: req.params.section
+        });
+    } catch (error) {
+        errorHandler(res, error.message);
+    }
+});
+
+
 module.exports = router;

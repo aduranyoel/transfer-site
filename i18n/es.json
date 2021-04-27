@@ -1,6 +1,29 @@
 {
   "title": "Cursos en línea - en cualquier momento y en cualquier lugar | Mega Courses",
   "subtitle": "Sin Lìmites de distancia.",
+  "agree": {
+    "title": "Tomese un minuto y lea detenidamente.",
+    "terms": "Condiciones de uso.",
+    "accept": "Acepto los terminos y acuerdo",
+    "btn_next": "Continuar"
+  },
+  "deal_title": "El acuerdo:",
+  "deal_body": {
+    "uno": "Nuestra plataforma le cobrara una comision de descuento del 20% del monto total.(Usted envia 100 el beneficiario recibe 80.)",
+    "dos": "La transferencia minima permitida es de 20 USD.",
+    "tres": "Nuestra plataforma le garantiza la entrega en efectivo o en deposito a una cuenta segun sea solicitado.\nSi es en deposito a un numero de cuenta sera el proceso muchisimo mas rapido, en caso de ser entrega en efectivo solo se brindara este servicio para residentes del municipio BANES de la provincia HOLGUIN region Oriental del pais.",
+    "cuatro": "Los depositos siempre seran a tarjetas en MLC o en CUP segun disponga el beneficiario. Las entregas en efectivo seran siempre en CUP",
+    "cinco": "En caso que desee tanto el benefactor como el beneficiario se les realizara el canjeo de moneda y se le valorara a 40 cup X 1 usd (esta tasa esta sujeta a cambios)",
+    "seis": "El plazo maximo de entrega en condiciones normales es de 48 horas teniendo en cuenta las diferencias horarias. Generalmente no durara mas de 12 horas el deposito en el destino. (Entiendase condiciones normales donde no existan eventualidades como: Catastrofes, inestabilidad en el internet por algun motivo en el territorio de destino que inhabilite temporalmente la descarga de la informacion, o casos similares.)",
+    "siete": "Su proceso es 100 % confidencial, Nadie podra nunca preguntar o solicitar registros de su operacion.",
+    "ocho": "Sera notificado al completar la entrega en el destino si es en deposito con el numero ID de la transaccion, si es en efectivo como evidencia fisica se tomara una fotografia al carnet de identidad y se la enviaremos en calidad de comprobante, asi queda terminado y cerrado el trato."
+  },
+  "deal": {
+    "title": "Al aceptar el acuerdo usted declara que:",
+    "uno": "Ha procedido con plena libertad de eleccion.",
+    "dos": "Entiende el proceder de esta plataforma y esta de acuerdo con cada aspecto del acuerdo.",
+    "tres": "Se hace responsable de introducir los datos que se requieren correctamente.\nEn caso que se equivoque en el destinatario, las consecuencias corren por su cuenta."
+  },
   "transfer": "Transferir ahora",
   "description": "Cursos gratis, se parte de una comunidad que aprende y comprte sus conocimientos",
   "home": "Inicio",

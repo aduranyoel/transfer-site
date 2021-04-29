@@ -22,24 +22,32 @@ router.get('/', async (req, res) => {
     try {
         res.render("home", {
             ...req.extra,
-            siteImage: 'https://www.megacourses.top/img/thumbnail.png',
-            courses: Array(4).fill(new Node())
+            siteImage: 'https://www.megacourses.top/img/thumbnail.png'
         });
     } catch (error) {
         errorHandler(res, error.message);
     }
 });
 
+router.get('/transfer/:agree', async (req, res) => {
+    try {
+        res.render("transfer", {
+            ...req.extra,
+            siteImage: 'https://www.megacourses.top/img/thumbnail.png',
+            agree: req.params.agree
+        });
+    } catch (error) {
+        errorHandler(res, error.message);
+    }
+});
 router.get('/transfer', async (req, res) => {
     try {
         res.render("transfer", {
             ...req.extra,
-            section: req.params.section
         });
     } catch (error) {
         errorHandler(res, error.message);
     }
 });
-
 
 module.exports = router;

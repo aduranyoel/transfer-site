@@ -26,7 +26,7 @@
                    onchange="handleChange(this)"
                    type="checkbox" class="form-control-color"/> {{t.agree.accept}}
         </label><br/>
-        <a id="next" href="/" class="btn btn-secondary disabled mt-2 float-end">{{t.agree.btn_next}}</a>
+        <a id="next" onclick="goToLink(event)" href="/transfer" class="btn btn-secondary disabled mt-2 float-end">{{t.agree.btn_next}}</a>
     </div>
 </div>
 <script>
@@ -34,5 +34,11 @@
         const next = document.getElementById('next');
         e.checked ?
         next.classList.remove('disabled') : next.classList.add('disabled');
+        sessionStorage.setItem("agree",e.checked);
+    }
+    function goToLink(event) {
+        event.preventDefault();
+        history.pushState(hrefLang(event.target.href),'',hrefLang(event.target.href));
+        history.go();
     }
 </script>

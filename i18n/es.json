@@ -1,11 +1,13 @@
 {
+  "noscript": "Habilite JavaScript",
   "title": "Cursos en línea - en cualquier momento y en cualquier lugar | Mega Courses",
   "subtitle": "Sin Lìmites de distancia.",
   "agree": {
     "title": "Tomese un minuto y lea detenidamente.",
     "terms": "Condiciones de uso.",
     "accept": "Acepto los terminos y acuerdo",
-    "btn_next": "Continuar"
+    "btn_next": "Continuar",
+    "warning": "No has aceptado los terminos."
   },
   "deal_title": "El acuerdo:",
   "deal_body": {

@@ -1,11 +1,13 @@
 {
+  "noscript": "Enable JavaScript",
   "title": "Online courses - anytime, anywhere | Mega Courses",
   "subtitle": "No distance limits",
   "agree": {
     "title": "Take a minute and read carefully.",
     "terms": "Agreement.",
     "accept": "I agree with the terms and deals.",
-    "btn_next": "Next"
+    "btn_next": "Next",
+    "warning": "You have not agree the terms."
   },
   "deal_title": "The deal:",
   "deal_body": {

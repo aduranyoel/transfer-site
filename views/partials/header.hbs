@@ -3,17 +3,39 @@
     <div class="container d-flex justify-content-between">
         <div class="logo" {{#if subtitle}}style="width: 50%"{{/if}}>
             <h1 class="text-light">
-                <a href="/"><span>{{title}}</span></a>
+                <a href="/" onclick="goToLink(event)"><span>{{title}}</span></a>
             </h1>
             <hr/>
            <h2 class="subtitle">{{t.subtitle}}</h2>
         </div>
+
         <nav class="nav-menu d-lg-block">
-            <ul>
-                <li class="">
-                    <a href="/">{{t.home}}</a>
+            <ul style="display: inline-flex">
+                <div style="display: inline-flex">
+                    <img src="/img/spain.png" style="width: 50px;height: 50px" alt="" onclick="handleLang('es')" class="btn btn-outline-secondary">
+                    <img src="/img/england.png" style="width: 50px;height: 50px" alt="" onclick="handleLang('en')" class="btn btn-outline-secondary">
+                </div>
+                <li class="float-end">
+                    <a href="/" onclick="goToLink(event)">{{t.home}}</a>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
+<script>
+
+
+    const hrefLang = (url)=> sessionStorage.getItem('lang') ?
+            `${url}?l=${sessionStorage.getItem('lang')}` : url;
+    function goToLink(event) {
+        event.preventDefault();
+        history.pushState(hrefLang(event.target.href),'',hrefLang(event.target.href));
+        history.go();
+    }
+    function handleLang(lang) {
+        sessionStorage.setItem('lang',lang);
+        history.pushState(hrefLang('/'),'',hrefLang('/'));
+        history.go();
+    }
+
+</script>

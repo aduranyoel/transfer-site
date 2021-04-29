@@ -37,10 +37,12 @@
 
     .action-transfer {
         margin-right: 30px;
+        color: white;
         background-color: #546078;
         border-color: transparent;
     }
 </style>
+
 <section class="header">
     <div class="container">
         <img src="/img/blog-recent-3.jpg" alt="Learning Community" width="100%" height="30vh"/>
@@ -49,10 +51,19 @@
             <p>{{t.logoSubtitle}}</p>
         </div>
         <div class="mt-2 col-12 transfer-container">
-            <a href="/transfer" class="btn btn-success btn-lg float-end action-transfer">
+            <a href="/transfer/agree" onclick="goToLink(event)"
+               class="btn btn-outline-secondary btn-lg float-end action-transfer">
                 <img style="width: 30px; height: 30px" src="/img/transfer.svg" alt="Transfer logo"/>
                 {{t.transfer}}
             </a>
         </div>
     </div>
 </section>
+
+<script>
+    function goToLink(event) {
+        event.preventDefault();
+        history.pushState(hrefLang(event.target.href),'',hrefLang(event.target.href));
+        history.go();
+    }
+</script>

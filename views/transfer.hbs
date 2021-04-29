@@ -1,3 +1,22 @@
+<link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
 {{> header}}
-{{> agreements}}
+{{#if agree}}
+    {{> agreements}}
+{{/if}}
+{{#unless agree}}
+    <div id="container" class="card"></div>
+{{/unless}}
 {{> footer}}
+
+<script type="module">
+    import payment from "/payment.js";
+
+        const agree = sessionStorage.getItem("agree");
+        const container = document.getElementById("container");
+        if (agree === "true" && container)
+            container.innerHTML = payment ;
+        else container.innerHTML = "<h2 class='text-center mt-5 mb-5'>{{t.agree.warning}}</h2>"
+
+</script>
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/bootstrap.js"></script>
